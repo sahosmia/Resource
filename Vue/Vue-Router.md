@@ -1,6 +1,8 @@
 ## Vue Router
 
 ```js
+//router/index.js
+
 import { createRouter, createWebHistory } from "vue-router";
 
 import NotFound from "../pages/core/NotFound.vue";
@@ -52,3 +54,36 @@ router.beforeEach((to, from, next) => {
 export default router;
 
 ```
+
+
+
+```js
+// App.vue
+
+<template>
+    <router-view></router-view>
+</template>
+```
+
+
+```js
+//use it in main.js
+app.use(router)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
